@@ -52,7 +52,7 @@ map.on('load', function () {
         source: 'facility_point',
         layout: {
             'icon-image': 'facility_icon',
-            'icon-size': 1,
+            'icon-size': 0.1,
         },
     });
 });
