@@ -24,7 +24,7 @@
 //    });
 //    map.addSource('facility_point', {
 //        type: 'geojson',
-//        data: "C:\Users\sokag\Desktop\プログラミング\プログラミング\Python\GIS\MapLibre GL JS\csvtogeojson\土木学会選奨土木遺産2022.geojson",
+//        data: "./csvtogeojson/土木学会選奨土木遺産2022.geojson",
 //    });
 //    map.addLayer({
 //        id: 'facility_point',
@@ -38,13 +38,13 @@
 //})
 
 map.on('load', function () {
-    map.loadImage('./img/purple-circle.png', function (error, image) {
+    map.loadImage('./img/つり橋アイコン1.png', function (error, image) {
         if (error) throw error;
         map.addImage('facility_icon', image);
     });
     map.addSource('facility_point', {
         type: 'geojson',
-        data: "C:\\Users\\sokag\\Desktop\\プログラミング\\プログラミング\\Python\\GIS\\MapLibre GL JS\\csvtogeojson\\土木学会選奨土木遺産2022.geojson",
+        data: "./csvtogeojson/土木学会選奨土木遺産2022.geojson",
     });
     map.addLayer({
         id: 'facility_point',
