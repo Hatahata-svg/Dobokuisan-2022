@@ -38,7 +38,7 @@
 //})
 
 map.on('load', function () {
-    map.loadImage('./img/つり橋アイコン1.png', function (error, image) {
+    map.loadImage('./JPG/つり橋アイコン1.png', function (error, image) {
         if (error) throw error;
         map.addImage('facility_icon', image);
     });
