@@ -44,7 +44,7 @@ map.on('load', function () {
     });
     map.addSource('facility_point', {
         type: 'geojson',
-        data: "./csvtogeojson/土木学会選奨土木遺産2022.geojson",
+        data: "土木学会選奨土木遺産2022.geojson",
     });
     map.addLayer({
         id: 'facility_point',
