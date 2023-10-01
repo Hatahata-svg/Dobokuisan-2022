@@ -38,7 +38,7 @@
 //})
 
 map.on('load', function () {
-    map.loadImage("C:\\Users\\sokag\\Desktop\\プログラミング\\プログラミング\\Python\\GIS\\MapLibre GL JS\\つり橋アイコン1.png", function (error, image) {
+    map.loadImage('./img/purple-circle.png', function (error, image) {
         if (error) throw error;
         map.addImage('facility_icon', image);
     });
