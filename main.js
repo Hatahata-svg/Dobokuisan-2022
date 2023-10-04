@@ -39,7 +39,9 @@ map.on('load', function () {
 // 地物クリック時にポップアップを表示する
 map.on('click', 'facility_point', function (e) {
     var coordinates = e.features[0].geometry.coordinates.slice();
-     var name = e.features[0].properties['構造物名'];
+    var name = e.features[0].properties['構造物名'];
+    var Area = e.features[0].properties['エリア'];
+    var Setsumei = e.features[0].properties['説明'];
 
     while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
         coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
