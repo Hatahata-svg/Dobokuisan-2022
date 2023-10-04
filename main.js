@@ -53,5 +53,7 @@ map.on('click', 'facility_point', function (e) {
     })
         .setLngLat(coordinates)
         .setHTML(name)
+        .setHTML(Area)
+        .setHTML(Setsumei)
         .addTo(map);
 });
