@@ -52,8 +52,6 @@ map.on('click', 'facility_point', function (e) {
         closeButton: false, // 閉じるボタンの表示
     })
         .setLngLat(coordinates)
-        .setHTML(name)
-        .setHTML(Area)
-        .setHTML(Setsumei)
+        .setHTML(name+Area+Setsumei)
         .addTo(map);
 });
