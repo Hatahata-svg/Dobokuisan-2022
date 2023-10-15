@@ -52,6 +52,6 @@ map.on('click', 'facility_point', function (e) {
         closeButton: false, // 閉じるボタンの表示
     })
         .setLngLat(coordinates)
-        .setHTML(name + '<br>' + Area + '<br>' + Setsumei)
+        .setHTML('名前: '+name+'<br>エリア: '+Area+'<br>説明: '+Setsumei)
         .addTo(map);
 });
